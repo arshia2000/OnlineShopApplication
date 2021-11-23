@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_custom_alert_wifi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/gps_icon">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/custom_alert_gps"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_custom_alert_wifi"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="موقعیت مکانی شما فعال نیست"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#000"></TextView>
+
+    <Button
+        android:id="@+id/btn_alrt_gps"
+        android:layout_width="200dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/custom_alert_gps"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="فعال سازی موقعیت مکانی"
+        android:background="@color/red_color"
+        android:textColor="@color/white_color">
+
+    </Button>
+
+
+</RelativeLayout>

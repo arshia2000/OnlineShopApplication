@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProductInformation">
+
+
+<ScrollView
+    android:id="@+id/sc_information"
+    android:layout_width="match_parent"
+    android:layout_height="625dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_information"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/placeholder"
+        android:scaleType="fitXY"
+        >
+
+    </ImageView>
+
+
+        <TextView
+            android:id="@+id/tv_title_information"
+            android:layout_width="380dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="90dp"
+            android:text="عنوان"
+            android:textSize="21sp"
+            android:layout_below="@+id/img_information"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_state_name_information"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="وضعیت موجودی :"
+            android:layout_alignRight="@+id/tv_title_information"
+
+            android:textSize="21sp"
+            android:layout_below="@id/tv_title_information"
+            android:layout_marginTop="15dp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tv_state_information"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="ناموجود"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white_color"
+            android:textSize="19sp"
+            android:background="@drawable/custom_textview_do_not_exist"
+            android:layout_marginLeft="20dp"
+           android:layout_alignBaseline="@id/tv_state_name_information"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"></TextView>
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_state_name_information"
+            android:scrollbars="vertical"
+            android:fillViewport="true">
+
+
+        <TextView
+            android:id="@+id/tv_information_information"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:text="اطلاعات"
+            android:gravity="right"
+            android:padding="5dp"
+            android:layout_below="@id/tv_state_name_information"
+            android:layout_marginTop="30dp"
+            android:layout_alignRight="@id/tv_state_name_information"
+            android:textSize="19sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+           ></TextView>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_rating_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:text="امتیاز محصول"
+            android:layout_below="@id/SCROLLER_ID"
+            android:layout_marginTop="10dp"></TextView>
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_rating_bar"
+            android:layout_marginBottom="10dp">
+
+        </RatingBar>
+
+        <ImageView
+            android:id="@+id/im_information_call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/rating_bar"
+            android:layout_marginTop="40dp"
+            android:onClick="callclick"
+            android:layout_alignRight="@+id/rating_bar"
+            android:src="@drawable/ic_local_phone_black_24dp"></ImageView>
+
+        <ImageView
+            android:id="@+id/im_information_sms"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rating_bar"
+            android:layout_marginLeft="40dp"
+            android:onClick="smsclick"
+            android:layout_marginTop="40dp"
+            android:layout_alignLeft="@+id/rating_bar"
+            android:src="@drawable/ic_email_black_24dp">
+
+
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_below="@id/sc_information"
+    android:layout_marginTop="10dp">
+
+    <Button
+        android:id="@+id/btn_order_information"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/red_color"
+        android:textColor="@color/white_color"
+        android:text="اضافه کردن به سبد"
+        android:textSize="22sp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp">
+
+    </Button>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_price_information"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="قیمت"
+        android:textSize="22sp"
+        android:gravity="right"
+        android:textColor="@color/green_color"
+        android:layout_alignBaseline="@id/btn_order_information"></TextView>
+
+</RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+

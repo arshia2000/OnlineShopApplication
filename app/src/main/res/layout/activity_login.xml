@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F34141"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F34141">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/im_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp">
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_password_confrim"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tv_error"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custombutton_state"
+            android:text="Register"
+            android:onClick="registerclick"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp">
+
+        </Button>
+
+        <ImageView
+            android:id="@+id/im_see_password"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@id/et_password"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/et_password"
+            android:baselineAlignBottom="true"
+            android:onClick="imageclick"
+            android:src="@drawable/ic_visibility_off_black_24dp" />
+
+
+        <ImageView
+            android:id="@+id/im_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_account_box_black_24dp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_password_confrim"
+            android:layout_marginTop="30dp"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"></TextView>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="45dp"
+            android:background="#FFFFFF"
+            android:clickable="false"></Button>
+
+    </RelativeLayout>
+
+
+</ScrollView>

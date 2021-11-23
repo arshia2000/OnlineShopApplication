@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/custom_stroke"
+    android:id="@+id/custom_list_relative_layout"
+    android:onClick="listonclick">
+
+    <ImageView
+        android:id="@+id/im_custom_list"
+        android:layout_width="150dp"
+        android:layout_height="148dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/drawerbackground"
+        android:scaleType="fitXY">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_title_custom_list"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@id/im_custom_list"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:text="title"
+        android:textSize="15sp"
+        android:layout_marginLeft="50dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/line_custom_list"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:clickable="false"
+        android:layout_marginTop="5dp"
+        android:background="@color/line_color"
+        android:layout_below="@id/tv_exist_custom_list"
+        android:layout_alignRight="@id/tv_exist_custom_list"
+        ></Button>
+
+
+<TextView
+    android:id="@+id/tv_exist_custom_list"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:text="موجود نیست"
+    android:textColor="@color/white_color"
+    android:background="@drawable/custom_textview_exists"
+    android:textSize="12sp"
+    android:layout_below="@id/tv_title_custom_list"
+    android:gravity="center"
+    android:layout_alignRight="@id/tv_title_custom_list">
+
+</TextView>
+
+
+
+    <TextView
+        android:id="@+id/tv_price_custom_list"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="قیمت"
+        android:textSize="20sp"
+        android:layout_below="@id/line_custom_list"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/green_color"
+        android:gravity="right"
+        android:layout_alignRight="@id/tv_title_custom_list">
+
+    </TextView>
+
+
+    <TextView
+
+        android:id="@+id/tv_off_custom_list"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="50%"
+        android:textSize="20sp"
+        android:layout_toLeftOf="@id/tv_price_custom_list"
+        android:layout_below="@id/line_custom_list"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_textview_do_not_exist"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/white_color"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+       >
+
+    </TextView>
+
+
+
+
+</RelativeLayout>

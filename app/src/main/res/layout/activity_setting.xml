@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Setting">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/im_logo_setting"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_settings_black_24dp"></ImageView>
+
+        <Button
+            android:id="@+id/btn_line1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/tv_text_logo_setting"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            android:background="#8C8C8C"></Button>
+
+
+        <TextView
+            android:id="@+id/tv_text_logo_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تنظیمات"
+            android:layout_below="@+id/im_logo_setting"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اندازه متن"
+        android:layout_below="@+id/tv_text_logo_setting"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_sample_text_size"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_text_size"
+        android:layout_height="wrap_content"
+        android:text="sample"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+    </TextView>
+
+<SeekBar
+    android:id="@+id/setting_seekbar"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_sample_text_size"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp">
+
+
+</SeekBar>
+
+        <TextView
+            android:id="@+id/tv_size_show"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="size"
+            android:layout_toRightOf="@id/setting_seekbar"
+            android:layout_below="@id/tv_sample_text_size"
+            android:layout_marginTop="20dp"
+            android:gravity="center"></TextView>
+
+        <Button
+            android:id="@+id/btn_line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/setting_seekbar"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            android:background="#8C8C8C"></Button>
+
+
+        <TextView
+            android:id="@+id/tv_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حالت برنامه"
+            android:textSize="20sp"
+            android:layout_below="@id/btn_line"
+            android:layout_marginTop="30dp"
+            android:gravity="center"></TextView>
+
+        <ImageView
+            android:id="@+id/im_light"
+            android:layout_width="50dp"
+            android:layout_marginTop="30dp"
+            android:onClick="lightonclick"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/ic_brightness_5_black_24dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_theme">
+
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/im_dark"
+            android:layout_width="40dp"
+            android:onClick="darkonclick"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_theme"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="230dp"
+            android:src="@drawable/ic_brightness_3_black_24dp">
+
+        </ImageView>
+
+
+        <Button
+            android:id="@+id/btn_line2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/im_light"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            android:background="#8C8C8C"></Button>
+
+    </RelativeLayout>
+</ScrollView>

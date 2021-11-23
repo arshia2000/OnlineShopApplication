@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="120dp"
+    android:layout_height="250dp"
+    android:background="@drawable/custom_stroke"
+    android:id="@+id/recycle_layout_id">
+
+
+    <ImageView
+        android:id="@+id/im_firstitem"
+        android:scaleType="fitXY"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:visibility="gone">
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/im_custom_grid"
+        android:layout_width="119dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_height="90dp"
+        android:src="@drawable/drawerbackground"
+        android:scaleType="fitXY">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_title_custom_grid"
+        android:layout_marginRight="6dp"
+        android:layout_width="120dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/im_custom_grid"
+        android:text="عنوان"
+        android:textSize="10sp"
+        android:layout_marginTop="3dp">
+
+    </TextView>
+
+
+
+    <TextView
+        android:id="@+id/tv_exist_custom_grid"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_custom_grid"
+        android:text="موجود نیست"
+        android:layout_alignRight="@+id/tv_title_custom_grid"
+        android:textSize="7sp"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:background="@drawable/custom_textview_exists"
+        android:layout_marginTop="40dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_custom_recycle"
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/tv_exist_custom_grid"
+        android:clickable="false"
+        android:background="@color/line_color"
+        >
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_price_custom_grid"
+        android:layout_width="78dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignRight="@+id/tv_exist_custom_grid"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_custom_recycle"
+        android:text="قیمت"
+        android:textSize="12sp"
+
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/green_color"
+        android:layout_marginTop="50dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_off_custom_grid"
+        android:layout_width="30dp"
+        android:layout_marginBottom="3dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tv_price_custom_grid"
+        android:layout_marginLeft="3dp"
+        android:layout_alignBaseline="@+id/tv_price_custom_grid"
+        android:text="50%"
+        android:gravity="center"
+
+        android:textSize="12sp"
+        android:textColor="@color/white_color"
+        android:background="@drawable/custom_textview_do_not_exist"
+        android:layout_marginTop="3dp">
+
+    </TextView>
+
+
+
+
+
+
+</RelativeLayout>

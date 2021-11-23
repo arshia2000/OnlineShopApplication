@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AboutUs">
+
+    <ImageView
+        android:id="@+id/im_about_us"
+        android:layout_width="match_parent"
+        android:padding="50dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logotext"></ImageView>
+
+<TextView
+    android:id="@+id/tv_name_sample_about_us"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/im_about_us"
+    android:text="نام و نام خانوادگی :"
+    android:textSize="21sp"
+    android:layout_marginRight="20dp"
+    android:layout_alignRight="@id/im_about_us"
+    >
+
+</TextView>
+
+
+    <TextView
+        android:id="@+id/tv_name_about_us"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/im_about_us"
+        android:text="ارشیا واعظی"
+        android:layout_toLeftOf="@id/tv_name_sample_about_us"
+        android:layout_alignBaseline="@id/tv_name_sample_about_us"
+        android:textSize="21sp"
+
+
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_phone_sample_about_us"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name_sample_about_us"
+        android:text="شماره تماس :"
+        android:textSize="21sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignRight="@id/im_about_us"
+        >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tv_phone_about_us"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/im_about_us"
+        android:text="09384227751"
+        android:gravity="right"
+        android:layout_toLeftOf="@id/tv_phone_sample_about_us"
+        android:layout_alignBaseline="@id/tv_phone_sample_about_us"
+        android:textSize="21sp"
+
+
+        >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tv_email_sample_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_phone_sample_about_us"
+        android:text="ادرس ایمیل"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:layout_alignRight="@id/tv_phone_sample_about_us"
+        android:layout_marginTop="70dp"
+
+
+        >
+
+    </TextView>
+
+
+    <TextView
+       android:id="@+id/tv_email_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_email_sample_about_us"
+        android:text="arshia.vaezi20@yahoo.com"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:layout_alignRight="@id/tv_phone_sample_about_us"
+        android:layout_marginTop="30dp"
+
+
+        >
+
+    </TextView>
+
+
+    <TextView
+         android:id="@+id/tv_class_information_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/tv_email_about_us"
+        android:text="کلاس اندروید پک روز های جمعه ساعت 8 تا 12 . "
+        android:textSize="21sp"
+        android:layout_alignRight="@id/tv_phone_sample_about_us"
+        android:layout_marginTop="50dp"
+
+
+        >
+
+    </TextView>
+
+
+
+</RelativeLayout>

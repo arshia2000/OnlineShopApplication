@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Cart">
+
+    <ImageView
+        android:id="@+id/im_cart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/emptycart"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"></ImageView>
+
+    <TextView
+        android:id="@+id/tv_cart"
+        android:layout_width="300dp"
+        android:layout_below="@+id/im_cart"
+        android:layout_height="wrap_content"
+        android:text="کالایی در سبد شما وجود ندارد "
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_list_cart"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="لیست سفارش ها"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:textSize="25sp"></TextView>
+
+    <ListView
+        android:id="@+id/lv_cart"
+        android:layout_below="@+id/tv_list_cart"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"></ListView>
+
+
+
+
+</RelativeLayout>

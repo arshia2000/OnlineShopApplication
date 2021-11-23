@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Category">
+
+
+    <ImageView
+        android:id="@+id/im_list_simbol_category"
+        android:layout_width="40dp"
+        android:layout_marginTop="15dp"
+        android:onClick="listclick"
+        android:layout_marginLeft="150dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_view_headline_black_24dp"
+        android:layout_marginBottom="20dp">
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/im_grid_category_symbol"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+       android:onClick="gridclick"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="230dp"
+        android:src="@drawable/ic_view_module_black_24dp">
+
+    </ImageView>
+
+
+    <ListView
+        android:id="@+id/lv_category"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/im_list_simbol_category"
+        android:visibility="gone"
+
+        ></ListView>
+
+    <GridView
+        android:id="@+id/gv_category"
+        android:numColumns="2"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_below="@id/im_grid_category_symbol">
+
+    </GridView>
+
+
+</RelativeLayout>

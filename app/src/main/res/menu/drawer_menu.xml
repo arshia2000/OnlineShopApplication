@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="دسته بندی ها">
+
+        <menu>
+            <group android:checkableBehavior="single" android:visible="true" >
+
+    <item android:id="@+id/m_home"
+          android:title="صفحه اصلی"
+          android:icon="@drawable/ic_home_black_24dp"
+        android:checkable="true"></item>
+
+    <item android:id="@+id/m_digital"
+        android:title="کالا های دیجیتال"
+        android:icon="@drawable/ic_laptop_chromebook_black_24dp"
+        android:checkable="true">
+    </item>
+
+    <item android:id="@+id/home_product"
+        android:title="لوازم خانگی"
+        android:icon="@drawable/ic_event_seat_black_24dp"
+        android:checkable="true">
+    </item>
+
+</group>
+        </menu>
+
+</item>
+
+
+
+
+
+
+   <item android:title="برنامه">
+
+<menu>
+
+    <item android:id="@+id/m_download"
+        android:title="دانلود کتاب"
+        android:icon="@drawable/ic_arrow_downward_black_24dp">
+    </item>
+
+
+    <item android:id="@+id/m_shopping"
+        android:title="سبد خرید"
+        android:icon="@drawable/ic_shopping_basket_black_24dp">
+    </item>
+
+    <item android:id="@+id/m_setting"
+        android:title="تنظیمات"
+        android:icon="@drawable/ic_settings_black_24dp">
+    </item>
+
+    <item android:id="@+id/m_log_out"
+        android:title="خروج از حساب"
+        android:icon="@drawable/ic_power_settings_new_black_24dp">
+    </item>
+
+
+
+
+
+</menu>
+
+   </item>
+
+
+
+<item android:title="سازنده">
+
+<menu>
+
+    <item android:id="@+id/m_about_us"
+        android:title="درباره ما"
+        android:icon="@drawable/ic_account_box_black_24dp">
+    </item>
+
+    <item android:id="@+id/m_contact_us"
+        android:title="ارتباط با ما"
+        android:icon="@drawable/ic_local_phone_black_24dp">
+    </item>
+
+
+
+</menu>
+
+
+
+</item>
+
+
+
+
+    </menu>

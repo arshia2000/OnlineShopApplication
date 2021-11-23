@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:id="@+id/relative_layout_download">
+
+
+    <ImageView
+        android:id="@+id/im_custom_list_download"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/drawerbackground"
+        android:scaleType="fitXY">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_title_download"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="title"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/im_custom_list_download"
+        android:gravity="center"></TextView>
+
+    <TextView
+        android:id="@+id/tv_athor_download"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="author"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/tv_title_download"
+        android:layout_toRightOf="@+id/im_custom_list_download"
+        android:gravity="center"></TextView>
+
+
+
+
+</RelativeLayout>
