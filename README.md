@@ -16,7 +16,7 @@ This training project provides core e-commerce features such as browsing product
 - **Multiple UI pages:** Home, About Us, Cart, Category, Contact Us, Login / Register
 
 ## 📂 Project Structure
-```text
+```
 OnlineShopApplication-master/
 ├── app/
 │   ├── src/main/java/com/example/digicala/
@@ -33,7 +33,7 @@ OnlineShopApplication-master/
 ├── build.gradle
 ├── settings.gradle
 └── gradlew
-
+```
 ## 📦 Key Packages
 - **`adaptor`**: Adapters for RecyclerView lists, download lists, and image sliders.
 - **`broadcast`**: Contains internet connectivity broadcast receiver.
